@@ -1,0 +1,95 @@
+# text/yaml
+
+# site_name: TemplateSite
+# site_url: https://example.com/
+# END required configuration for 'mkdocs' site options
+
+# Main configuration file for mkdocs generation of USERNAME.github.io/PROJECTNAME website
+
+# Site and directory configuration
+site_name: TemplateSite
+# site_url: https://example.com/
+site_url: https://jgrisham.github.io/mkdocs-material_template/
+repo_url: https://github.com/jgrisham/mkdocs-material_template
+repo_name: jgrisham/mkdocs-material_template
+edit_uri: blob/main/docs/
+use_directory_urls: False # Must be 'False' to view without a web server
+docs_dir: '../'
+site_dir: '../../site/'
+
+# Navigation hierarchy (this should mimic the layout of Overview.md)
+nav:
+  - Home: index.md    # Use different title than filename; allows displaying flat collection of files as a hierarchy
+  - About: index.md # about.md
+  # - Overview.md       # Same title as filename
+  # - Features.md
+  # - FAQ.md
+  # - Releases.md
+  # - Contact.md
+  - Section page, level one:
+    - Overview: index.md # Overview1.md
+    - Section page, level two:
+      - index.md # Overview1.1.md
+
+
+# Markdown document translation settings
+markdown_extensions:
+  - toc:
+      permalink: True
+      toc_depth: 6
+  - attr_list
+  - mdx_partial_gfm  # reports as 'not installed' upon build
+  - mdx_truly_sane_lists
+  - mdx_breakless_lists
+plugins:
+  - search
+  - mkdocs-simple-hooks:
+      hooks:
+        on_page_markdown: "docs._githubpages.mkdocs_hooks:transform"
+  - exclude:
+      glob:
+        - README.md
+
+# Website layout configuration (using mkdocs-material theme)
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: grey
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  # logo: img/logo.svg
+  favicon: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  features:
+      #- navigation.tabs
+      #- navigation.expand
+      - navigation.top
+      # if enabled, the TOC doesn't work for some pages
+      # - toc.integrate
+      - search.suggest
+      - search.highlight
+      - search.share
+extra_css:
+  - _githubpages/css/extra.css
+
+# Site usage statistics
+# extra:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#site-search-tracking
+  # analytics:
+    # provider: google
+    # property: UA-000000000-1
+
+
+# END configuration for 'mkdocs-material' site options
