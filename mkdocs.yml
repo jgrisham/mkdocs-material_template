@@ -84,7 +84,7 @@ extra_css:
   - _githubpages/css/extra.css
 
 # Site usage statistics
-extra:
+# extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#site-search-tracking
   # analytics:
     # provider: google
