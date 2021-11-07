@@ -15,7 +15,7 @@ repo_name: jgrisham/mkdocs-material_template
 edit_uri: blob/main/docs/
 use_directory_urls: False # Must be 'False' to view without a web server
 docs_dir: '../'
-#site_dir: '../../site/'
+site_dir: '../../site/'
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
