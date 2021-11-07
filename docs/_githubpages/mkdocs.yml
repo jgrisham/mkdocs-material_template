@@ -19,16 +19,16 @@ site_dir: '../../site/'
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
   - Home: index.md    # Use different title than filename; allows displaying flat collection of files as a hierarchy
-  - About: about.md
-  - Overview.md       # Same title as filename
-  - Features.md
-  - FAQ.md
-  - Releases.md
-  - Contact.md
+  - About: index.md # about.md
+  # - Overview.md       # Same title as filename
+  # - Features.md
+  # - FAQ.md
+  # - Releases.md
+  # - Contact.md
   - Section page, level one:
-    - Overview1.md
+    - Overview: index.md # Overview1.md
     - Section page, level two:
-      - Overview1.1.md
+      - index.md # Overview1.1.md
 
 
 # Markdown document translation settings
