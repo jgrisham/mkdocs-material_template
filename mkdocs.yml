@@ -1,4 +1,4 @@
-``` yaml
+# text/yaml
 site_name: TemplateSite
 site_url: https://example.com/
 nav:
@@ -7,4 +7,5 @@ nav:
 
 theme:
   name: material
-```
+
+# END configuration for 'mkdocs' site options
