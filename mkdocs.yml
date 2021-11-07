@@ -45,9 +45,9 @@ plugins:
   # - mkdocs-simple-hooks:
   #     hooks:
         # on_page_markdown: "docs._githubpages.mkdocs_hooks:transform"
-  - exclude:
-      glob:
-        - README.md
+  # - exclude:
+      # glob:
+        # - README.md
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
