@@ -1,4 +1,10 @@
 ``` yaml
+site_name: TemplateSite
+site_url: https://example.com/
+nav:
+    - Home: index.md
+    - About: about.md
+
 theme:
   name: material
 ```
