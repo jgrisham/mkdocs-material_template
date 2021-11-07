@@ -1,5 +1,9 @@
 # text/yaml
-name: ci # (1)
+name: githubpages-mkdoc-deploy # (1)
+# This GitHub action deploys a static copy of tbe 'docs' folder to be hosted by GitHub Pages
+# The resulting html files will be in the "gh_pages" branch of this project.
+# The "Pages" section of the project settings page on GitHub must be pointed to the root of that branch.
+
 on:
   # Trigger the workflow on push or pull request,
   # but only for the main branch
