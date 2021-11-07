@@ -14,7 +14,7 @@ repo_name: jgrisham/mkdocs-material_template
 edit_uri: blob/main/docs/
 use_directory_urls: False
 docs_dir: '../'
-# site_dir: '../../site/'
+site_dir: '../../site/'
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
@@ -44,7 +44,7 @@ plugins:
   - search
   - mkdocs-simple-hooks:
       hooks:
-        # on_page_markdown: "docs._githubpages.mkdocs_hooks:transform"
+        on_page_markdown: "docs._githubpages.mkdocs_hooks:transform"
   - exclude:
       glob:
         - README.md
