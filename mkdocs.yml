@@ -13,8 +13,8 @@ repo_url: https://github.com/jgrisham/mkdocs-material_template
 repo_name: jgrisham/mkdocs-material_template
 edit_uri: blob/main/docs/
 use_directory_urls: False
-docs_dir: '../'
-site_dir: '../../site/'
+# docs_dir: '../'
+# site_dir: '../../site/'
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
@@ -80,8 +80,8 @@ theme:
       - search.suggest
       - search.highlight
       - search.share
-extra_css:
-  - _githubpages/css/extra.css
+# extra_css:
+  # - _githubpages/css/extra.css
 
 # Site usage statistics
 # extra:
