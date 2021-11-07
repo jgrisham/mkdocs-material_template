@@ -13,12 +13,12 @@ repo_url: https://github.com/jgrisham/mkdocs-material_template
 repo_name: jgrisham/mkdocs-material_template
 edit_uri: blob/main/docs/
 use_directory_urls: False
-# docs_dir: '../'
+docs_dir: '../'
 # site_dir: '../../site/'
 
 # Navigation hierarchy (this should mimic the layout of Overview.md)
 nav:
-  - Home: index.md    # Use different title than filename
+  - Home: index.md    # Use different title than filename; allows displaying flat collection of files as a hierarchy
   - About: about.md
   - Overview.md       # Same title as filename
   - Features.md
@@ -37,17 +37,17 @@ markdown_extensions:
       permalink: True
       toc_depth: 6
   - attr_list
-  # - mdx_partial_gfm  # reports as 'not installed' upon build
-  # - mdx_truly_sane_lists
-  # - mdx_breakless_lists
+  - mdx_partial_gfm  # reports as 'not installed' upon build
+  - mdx_truly_sane_lists
+  - mdx_breakless_lists
 plugins:
   - search
-  # - mkdocs-simple-hooks:
-  #     hooks:
+  - mkdocs-simple-hooks:
+      hooks:
         # on_page_markdown: "docs._githubpages.mkdocs_hooks:transform"
-  # - exclude:
-      # glob:
-        # - README.md
+  - exclude:
+      glob:
+        - README.md
 
 # Website layout configuration (using mkdocs-material theme)
 theme:
@@ -80,8 +80,8 @@ theme:
       - search.suggest
       - search.highlight
       - search.share
-# extra_css:
-  # - _githubpages/css/extra.css
+extra_css:
+  - _githubpages/css/extra.css
 
 # Site usage statistics
 # extra:
